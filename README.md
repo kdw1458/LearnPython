@@ -1,3 +1,3 @@
 LearnPython
 
-site : http://pymbook.readthedocs.io/en/latest/index.html
+site : http://pymbook.readthedocs.io/en/latest/strings.html
