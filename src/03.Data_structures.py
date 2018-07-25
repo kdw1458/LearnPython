@@ -52,3 +52,24 @@ a['Sarah'] = 'grape' # {'Daniel':'apple', 'David':'banana', 'Sarah':'grape'}
 for x, y in a.items():
     print("%s likes %s" %(x, y))
 dict((('Sarah', 'David'), ('apple', 'kiwi'))) # {'Sarah':'apple', 'David':'kiwi'}
+
+a = {}
+a.setdefault('fruits', []).append('apple') # {'fruits': ['apple']}
+a.setdefault('fruits', []).append('banana') # {'fruits': ['apple', 'banana']}
+# dict.get(key, default) gets a default value when the key does not exists.
+a.get('fruits', 0) # ['apple', 'banana']
+a.get('vegitable', 0) # 0
+
+# enumerate
+for i, j in enumerate(['apple', 'banana']):
+    print(i, j) 
+# 0 apple
+# 1 banana
+
+# zip
+a = ['David', 'Daniel']
+b = ['banana', 'apple']
+for x, y in zip(a, b):
+    print("%s likes %s" % (x, y))
+# David likes banana
+# Daniel likes apple
